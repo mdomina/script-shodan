@@ -26,3 +26,8 @@ Oppure aggiungere l'intera rete
 > tagert1 = 8.8.8.0/24
 
 I nomi degli IP o delle reti da scansionare **non** sono rilevanti, in questo esempio vengono chiamati target ma posso essere chiati anche pippo e ciccio.
+
+<h4> Run </h4>
+
+Avviare script
+>venv/bin/python main.py
