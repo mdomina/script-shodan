@@ -1,4 +1,5 @@
-import shodan, ipaddress
+import shodan, ipaddress, time
+from .logger import logger
 
 def checkey(data, key):
     if key in data.keys():
@@ -7,7 +8,7 @@ def checkey(data, key):
 
 def api_shodan(apikey, host):
     api = shodan.Shodan(apikey)
-
+    time.sleep(1)
     try:
         # Search specific host in Shodan
         results = api.host(host)
@@ -39,7 +40,7 @@ def api_shodan(apikey, host):
             print("Port: {}".format(port))
             print("Demon: {}".format(product))
     except shodan.APIError as e:
-            print('Error: {}'.format(e))
+            logger.error(e)
 
 def split_network(ip):
     result = []
@@ -47,6 +48,7 @@ def split_network(ip):
     for x in net.hosts():
         result.append(str(x))   
     return result
+
 if __name__=='__main__':
     x = split_network("8.8.8.0/24")
     print(x)

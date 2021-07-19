@@ -1,6 +1,6 @@
 import configparser
-from api import split_network
-from api import api_shodan
+from utility import split_network
+from utility import api_shodan
 
 config = configparser.ConfigParser()
 config.read('config.ini')
