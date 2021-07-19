@@ -31,3 +31,7 @@ I nomi degli IP o delle reti da scansionare **non** sono rilevanti, in questo es
 
 Avviare script
 >venv/bin/python main.py
+
+<h4>Log</h4>
+
+Ogni errore genato dallo script viene salvato nel file **error.log**
