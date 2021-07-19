@@ -39,6 +39,9 @@ def api_shodan(apikey, host):
             port  = checkey(data=item, key='port')
             print("Port: {}".format(port))
             print("Demon: {}".format(product))
+        print()
+        print("***********************")
+        print()
     except shodan.APIError as e:
             logger.error(e)
 
