@@ -18,6 +18,7 @@ Aggiungere la lista di ip
 > [ip]
 >
 > tagert1 = 8.8.8.8
+> 
 > target2 = 8.8.8.4
 
 Oppure aggiungere l'intera rete
